@@ -1,0 +1,162 @@
+/*worldmap.jpg image from pexels.com*/
+body{
+	background: url(worldmap.jpg);
+	background-size: cover;
+	font-family: sans serif;
+}
+
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+/*<!--https://www.youtube.com/watch?v=8x1mO1d6-4w-->*/
+.navigation ul li{
+	float: left;
+	clear: right;
+	width: 200px;
+	height: 40px;
+	background-color: black;
+	opacity: 0.8;
+	line-height: 40px;
+	font-size: 20 px;
+	font-family: sans serif;
+	text-align: center;	
+	margin-right: 25px;
+}
+
+.navigation ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+.navigation ul li a:hover{
+	background-color: blue;
+}
+
+h1{
+	margin: auto;
+	display: inline-block;
+	text-align: center;
+	font-family: sans serif;
+	font-size: 65px;
+	color: white;
+}
+
+.unorderedList{
+	text-align: center;
+}
+
+.unorderedList ul li{
+	color: gold;
+	display: inline-block;
+	text-align: left;
+	font-family: sans serif;
+	font-size:40px;
+}
+
+/*https://codepen.io/nw/pen/udkIB*/
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 10px 25px;
+  
+	background-color: #4CC713;
+	color: white;
+  
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 0.9em;
+	text-align: center;
+	text-indent: 15px;
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 10px;
+	height: 2px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 3px;
+	margin-top: -7px;
+  
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+	
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: #4CC713;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #4CC713;
+	animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+	
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
+}
+
+p{
+	color: white;
+}
+
+.links p{
+	text-align: center;
+	font-size: 30px;
+}
+	
+.links a{
+	color: white;
+	font-size: 25px;
+	
+}
+
+.links a:hover{
+	color:blue;
+}

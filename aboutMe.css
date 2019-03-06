@@ -1,0 +1,73 @@
+/*worldmap.jpg image from pexels.com*/
+body{
+	background: url(worldmap.jpg);
+	background-size: cover;
+	font-family: sans serif;
+}
+
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+/*<!--https://www.youtube.com/watch?v=8x1mO1d6-4w-->*/
+ul li{
+	float: left;
+	clear: right;
+	width: 200px;
+	height: 40px;
+	background-color: black;
+	opacity: 0.8;
+	line-height: 40px;
+	font-size: 20 px;
+	font-family: sans serif;
+	text-align: center;	
+	margin-right: 25px;
+}
+
+ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+ul li a:hover{
+	background-color: blue;
+}
+
+h1{
+	margin: auto;
+	display: inline-block;
+	text-align: left;
+	font-size: 65px;
+	color: white;
+}
+
+img{	
+	height:500px;
+	width: 49%;
+	display: inline;
+	overflow: auto;
+	float:left;
+	position: center;
+	top: 25%
+}
+
+.scrollbox{
+	height: 500px;
+	width: 49%;
+	/*display: inline;*/
+	border: 1px solid #ccc;
+	overflow: auto;
+	position: center;
+	top: 25%;
+	left: 50%;
+	background-color: black;
+}	
+
+p{
+	color: white;
+	font-size:40px;
+}
+
